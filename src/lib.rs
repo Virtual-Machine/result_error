@@ -41,6 +41,7 @@ fn gen_components(idents: HashMap<String, String>) -> (String, String) {
 
 fn to_stream(input_str: String, err_match: String, impl_froms: String) -> TokenStream {
     format!("#[derive(Debug)]
+        /// container for ResultError error types
         pub enum ResultError {{
             {} 
         }}
